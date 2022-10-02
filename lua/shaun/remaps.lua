@@ -17,41 +17,37 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-keymap('i', 'jj', '<Esc>', opt)
+keymap("i", "jj", "<Esc>", opt)
 
 -- keymap('n', '<c-i>', '<Esc>:so ~/.config/nvim/init.lua<CR>', opt)
 -- keymap('n', '<C-h>', ':bprev<CR>', opt)
 -- keymap('n', '<C-l>', ':bnext<CR>', opt)
-keymap('n', '<leader>c', ':bd<CR>', opt)
-keymap('n', '<leader>nh', ':noh<CR>', opt)
-keymap('n', 'Y', 'y$', opt)
-keymap('n', '<C-c>', ':tabclose<CR>', opt)
-keymap('n', 'H', ':tabprevious<CR>', opt)
-keymap('n', 'L', ':tabnext<CR>', opt)
+keymap("n", "<leader>c", ":bd<CR>", opt)
+keymap("n", "<leader>nh", ":noh<CR>", opt)
+keymap("n", "Y", "y$", opt)
+keymap("n", "<C-c>", ":tabclose<CR>", opt)
+keymap("n", "H", ":tabprevious<CR>", opt)
+keymap("n", "L", ":tabnext<CR>", opt)
 
 --- Center me naughty
-keymap('n', 'n', 'nzzzv', opt)
-keymap('n', 'N', 'Nzzzv', opt)
-keymap('n', 'J', "mzJ'z", opt)
+keymap("n", "n", "nzzzv", opt)
+keymap("n", "N", "Nzzzv", opt)
+keymap("n", "J", "mzJ'z", opt)
 
 --- Sort the UNFORGIVABLE undo
-keymap('i', ',', ',<c-g>u', opt)
-keymap('i', '.', '.<c-g>u', opt)
-keymap('i', '!', '!<c-g>u', opt)
-keymap('i', '?', '?<c-g>u', opt)
-keymap('i', '<c-b>', 'mm<CR><ESC>`mi', opt)
-
+keymap("i", ",", ",<c-g>u", opt)
+keymap("i", ".", ".<c-g>u", opt)
+keymap("i", "!", "!<c-g>u", opt)
+keymap("i", "?", "?<c-g>u", opt)
+keymap("i", "<c-b>", "mm<CR><ESC>`mi", opt)
 
 --- Move text
-keymap('v', 'J', ':m \'>+1<CR>gv=gv', opt)
-keymap('v', 'K', ':m \'<-2<CR>gv=gv', opt)
-keymap('i', '<C-j>', ':m .+1<CR>==', opt)
-keymap('i', '<C-j>', ':m .-2<CR>==', opt)
-keymap('n', '<leader>j', ':m .+1<CR>==', opt)
-keymap('n', '<leader>k', ':m .-2<CR>==', opt)
-
-
-
+keymap("v", "J", ":m '>+1<CR>gv=gv", opt)
+keymap("v", "K", ":m '<-2<CR>gv=gv", opt)
+keymap("i", "<C-j>", ":m .+1<CR>==", opt)
+keymap("i", "<C-j>", ":m .-2<CR>==", opt)
+keymap("n", "<leader>j", ":m .+1<CR>==", opt)
+keymap("n", "<leader>k", ":m .-2<CR>==", opt)
 
 -- Normal --
 -- Better window navigation
@@ -103,7 +99,6 @@ keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 
-
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<C-l>", "<cmd>lua require'telescope.builtin'.find_files()<cr>", opts)
 keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.git_files()<cr>", opts)
@@ -114,3 +109,5 @@ keymap("n", "<C-n>", ":NvimTreeFindFileToggle<cr>", opts)
 keymap("n", "<leader>f", ":Format<cr>", opts)
 
 keymap("n", "<leader>lg", "<cmd>lua _LAZYGIT_TOGGLE()<cr>", opts)
+
+keymap("n", "<leader>x", ":b#<bar>bd#<CR>", opts)
