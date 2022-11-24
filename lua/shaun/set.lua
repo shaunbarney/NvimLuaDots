@@ -41,6 +41,15 @@ for k, v in pairs(options) do
 	vim.opt[k] = v
 end
 
+if vim.fn.has("nvim-0.7") then
+	vim.api.nvim_create_autocmd("FileType", {
+		pattern = "*.tex",
+		callback = function()
+			vim.wo.wrap = true
+		end,
+	})
+end
+
 vim.cmd([[highlight WinSeparator guibg=None]])
 vim.cmd([[set laststatus=3]])
 vim.cmd("set whichwrap+=<,>,[,],h,l")
