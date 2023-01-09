@@ -80,6 +80,9 @@ return packer.startup(function(use)
 	use("rcarriga/nvim-notify")
 	use("sunjon/shade.nvim")
 
+	--- search
+	use("ggandor/leap.nvim")
+
 	-- cmp plugins
 	-- Remember to update sources in cmp
 	use("hrsh7th/nvim-cmp") -- The completion plugin
