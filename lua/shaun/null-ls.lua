@@ -15,7 +15,7 @@ null_ls.setup({
 	sources = {
 		formatting.prettier.with({
 			extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote", "--tsx-single-quote" },
-			filetype = { "json" },
+			filetype = { "json", "html", "svelte" },
 		}),
 		formatting.autopep8.with({}),
 		-- formatting.black.with({ extra_args = { "--fast", "--line-lenth 80" } }),
@@ -24,6 +24,7 @@ null_ls.setup({
 		formatting.stylua,
 		formatting.rustfmt,
 		diagnostics.mypy.with({ extra_args = { "--ignore-missing-imports" } }),
+		formatting.latexindent,
 	},
 	on_attach = function(client, bufnr)
 		if client.supports_method("textDocument/formatting") then

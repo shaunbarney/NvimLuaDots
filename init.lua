@@ -8,6 +8,8 @@ require("shaun.null-ls")
 require("shaun.toggleterm")
 require("shaun.handlers").setup()
 require("shaun.barbar")
+require("shaun.chatgpt")
+require("shaun.autocmds")
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
@@ -256,6 +258,8 @@ local servers = {
   tsserver = {},
   tailwindcss = {},
   cssls = {},
+  svelte = {},
+  texlab = {},
 
   sumneko_lua = {
     Lua = {

@@ -1,4 +1,4 @@
-require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
+require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
   auto_reload_on_write = true,
   disable_netrw = false,
   hijack_cursor = false,
@@ -13,7 +13,6 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   reload_on_bufenter = false,
   view = {
     width = 30,
-    height = 30,
     hide_root_folder = false,
     side = "left",
     preserve_window_proportions = false,
@@ -115,4 +114,4 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
       profile = false,
     },
   },
-} -- END_DEFAULT_OPTS
+}) -- END_DEFAULT_OPTS
