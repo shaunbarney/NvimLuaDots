@@ -1,0 +1,31 @@
+{
+    "workspace.library": [
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/neodev.nvim/types/stable",
+        "/Users/SB185651/programs/nvim-macos/share/nvim/runtime/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/opt/nvim-treesitter-textobjects/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/opt/telescope-fzf-native.nvim/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/cmp_luasnip/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/Comment.nvim/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/copilot.vim/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/fidget.nvim/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/gitsigns.nvim/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/lualine.nvim/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/LuaSnip/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/mason.nvim/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/neodev.nvim/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/nvim-cmp/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/nvim-lspconfig/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/nvim-tree.lua/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/nvim-treesitter/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/nvim-web-devicons/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/onedark.nvim/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/packer.nvim/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/plenary.nvim/lua",
+        "/Users/SB185651/.local/share/nvim/site/pack/packer/start/telescope.nvim/lua",
+        "/Users/SB185651/.config/nvim/lua",
+        "${3rd}/luv/library"
+    ]
+}
